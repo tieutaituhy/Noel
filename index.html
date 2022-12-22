@@ -11,7 +11,12 @@
 </head>
 <body>
     
-    <audio autoplay='true'> <source src="./music/last.mp3"> </audio> 
+    <audio id="autoplay" controls style="display: none;">
+        <source src="./music/last.mp3">
+      </audio>
+      <script>
+          document.getElementById('autoplay').play();
+      </script>
     
     <div class="container">
         <div class="bgr-container">
